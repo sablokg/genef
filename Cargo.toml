@@ -1,0 +1,16 @@
+[package]
+name = "cafe-gui"
+version = "0.1.0"
+edition = "2021"
+description = "Desktop GUI to explore and plot CAFE5 gene family evolution results"
+license = "MIT"
+
+[dependencies]
+eframe = "0.29"
+egui_plot = "0.29"
+rfd = "0.15"
+anyhow = "1"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
